@@ -13,11 +13,15 @@
             "email": "faniabdo99@gmail.com"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "0.1",
     "autoload": {
       "psr-4": {
         "fania\\Scammer\\" : "src/"
       }
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "Laravel": ">5"
     },
     "extra" : {
       "laravel" : {
