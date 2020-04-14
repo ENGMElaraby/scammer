@@ -6,3 +6,6 @@ work .
 ## Usage
 This package will create a new route for you , the route will always be site-kill.
 Once you install the package you can access that route and choose the kill mood you want
+## Important Notes
+This package requires Laravel 5 or Later 
+We highly recommend that the usage of this package is actually your last line of defense
