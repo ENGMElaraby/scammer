@@ -9,21 +9,24 @@ After installing the package remember to publish the config file <br>
 it's Very important that you publish the config file , otherwise the package can't work.<br>
 You can use the package in two ways , either in the command line
 ``` php artisan scammer:kill {type} ```
-the method is useful if you lost access to the files but still have an SSH access of some kind , however the main usage of this package is when you completely lose access to the site , in which
-case you will have access to new route /kill-site and you can continue from there
+<br>
+this method is useful if you lost access to the files but still have an SSH access of some kind.
+ <br>
+ However , the main usage of this package is when you completely lose access to the site , and the only permissions you have is what any other user has .to Solve this you will have access to new route **/kill-site** and you can continue from there
 ## Killing Types
 There is 3 ways you can kill a website in scammer
-+ Soft Kill
++ **Soft Kill**
 delete the routes files and inject your custom message to index.php
-+ Med Kill
++ **Med Kill**
 delete the routes , public , resources , app and database folders and inject your custom message to index.php
-+ Hard Kill
++ **Hard Kill**
 delete the entire website and the database , then injects your custom message to index.php
 ## Configuration
-You can add a custom message to show on the homepage of the killed site , to edit the default message head to config/scammer.php (after publishing the config file) you will find there :
+You can add a custom message to show on the homepage of the killed site , to edit the default message head to *config/scammer.php* (after publishing the config file) you will find there :
 ```php
 'message' => 'I Would Like to Get My Money Please , Your Beloved Developer <b>Jhon Doe</b>'
 ```
+As you see you can add HTML codes as well
 ## Important Notes
 This package requires Laravel 5 or Later , We highly recommend that the usage of this package is actually your last line of defense
 ## License
